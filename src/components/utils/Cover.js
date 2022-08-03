@@ -1,26 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button } from "react-bootstrap";
+import {Button} from "react-bootstrap";
 
-const Cover = ({ name, login, coverImg }) => {
+const Cover = ({name, login, coverImg}) => {
     if ((name, login, coverImg)) {
         return (
             <div
                 className="d-flex justify-content-center flex-column text-center "
-                style={{ background: "#000", minHeight: "100vh" }}
+                style={{background: "#000", minHeight: "100vh"}}
             >
                 <div className="mt-auto text-light mb-5">
                     <div
                         className=" ratio ratio-1x1 mx-auto mb-2"
-                        style={{ maxWidth: "320px" }}
+                        style={{maxWidth: "320px"}}
                     >
-                        <img src={coverImg} alt="" />
-
-                        {/*<img src={coverImg} alt="" style={{*/}
-                        {/*    backgroundPosition: 'center',*/}
-                        {/*    backgroundRepeat: 'no-repeat',*/}
-                        {/*    objectFit: 'cover'*/}
-                        {/*}}/>*/}
+                        <img src={coverImg} alt="" style={{
+                            objectFit: 'cover'
+                        }}/>
                     </div>
                     <h1>{name}</h1>
                     <p>Please connect your wallet to continue.</p>
