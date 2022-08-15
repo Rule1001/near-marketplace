@@ -1,4 +1,4 @@
-const CONTRACT_NAME = "ticketscontract.sailgp.testnet"; // line 1
+const CONTRACT_NAME = "guest-book.testnet"; // line 1
 
 
 function environment(env) {
